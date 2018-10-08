@@ -4,13 +4,16 @@
     <meta charset="utf-8">
     <title>Asteroids</title>
     <script src="lib/bundle.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    Score: <span id="score"></span><br>
-    <canvas
-      id="game-canvas"
-      width="1000"
-      height="600"
-      style="background: black">
+    <header>
+      <div>Score: <span id="score"></span></div>
+      <div>Lives: <span id="lives"></span></div>
+    </header>
+    <main>
+      <canvas id="game-canvas" width="1000" height="600"></canvas>
+      <section id="game-over">Game Over</section>
+    </main>
   </body>
 </html>
